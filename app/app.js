@@ -1,14 +1,3 @@
-/**
- * 
- * AngularJS Boilerplate
- * @description           Description
- * @author                Jozef Butko // www.jozefbutko.com/resume
- * @url                   www.jozefbutko.com
- * @version               1.1.7
- * @date                  March 2015
- * @license               MIT
- * 
- */
 ;(function() {
 
 
@@ -16,7 +5,7 @@
    * Definition of the main app module and its dependencies
    */
   angular
-    .module('boilerplate', [
+    .module('d2l_kanban', [
       'ngRoute'
     ])
     .config(config);
@@ -43,13 +32,23 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
-      .when('/contact', {
-        templateUrl: 'views/contact.html',
+      .when('/class', {
+        templateUrl: 'views/classHome.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
-      .when('/setup', {
-        templateUrl: 'views/setup.html',
+      .when('/class/dropbox', {
+        templateUrl: 'views/classDropbox.html',
+        controller: 'MainController',
+        controllerAs: 'main'
+      })
+      .when('/class/grades', {
+        templateUrl: 'views/classGrades.html',
+        controller: 'MainController',
+        controllerAs: 'main'
+      })
+      .when('/calendar', {
+        templateUrl: 'views/calendar.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
@@ -68,7 +67,7 @@
    * 
    */
   angular
-    .module('boilerplate')
+    .module('d2l_kanban')
     .factory('authInterceptor', authInterceptor);
 
   authInterceptor.$inject = ['$rootScope', '$q', 'LocalStorage', '$location'];
@@ -100,7 +99,7 @@
    * Run block
    */
   angular
-    .module('boilerplate')
+    .module('d2l_kanban')
     .run(run);
 
   run.$inject = ['$rootScope', '$location'];

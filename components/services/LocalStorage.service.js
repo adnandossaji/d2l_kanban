@@ -24,7 +24,7 @@
      *
      */
     angular
-      .module('boilerplate')
+      .module('d2l_kanban')
       .factory('LocalStorage', [
         '$window', '$rootScope', LocalStorageService
       ]);
