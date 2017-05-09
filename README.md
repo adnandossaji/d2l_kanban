@@ -2,14 +2,9 @@
 D2L remake with extra KANBAN features
 
 ## Download
-```bash
-bower install angularjs-boilerplate
-```
-
-or
 
 ```bash
-git clone https://github.com/jbutko/AngularJS-Boilerplate.git
+git clone https://github.com/nansta/d2l_kanban.git
 ```
 
 ## 1. Setup
